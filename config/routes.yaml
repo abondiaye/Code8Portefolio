@@ -1,0 +1,26 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+index:
+    path: /
+    controller: App\Controller\HomeController::index
+
+
+admin_login:
+    path: /admin/login
+    controller: App\Controller\AdminController::login
+
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+
+formation:
+    path: /formation
+    controller: App\Controller\FormationController::index
+
+projet:
+    path: /projet
+    controller: App\Controller\ProjetController::index
+
+
