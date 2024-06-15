@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Projets</h1>
+    <ul>
+        <li><a href="{{ path('projet_apimages') }}">Apimages</a></li>
+        <li><a href="{{ path('projet_fedhubs') }}">Fedhubs</a></li>
+        <li><a href="{{ path('projet_portfolio') }}">Portfolio</a></li>
+        <li><a href="{{ path('projet_devin') }}">Devin</a></li>
+        <li><a href="{{ path('projet_saveworld') }}">Saveworld</a></li>
+    </ul>
+{% endblock %}
