@@ -1,0 +1,84 @@
+#header {
+    text-align: center;
+    font-family: monospace;
+    font-size: 2em;
+    background-color: rgb(95, 95, 95);
+    color: #009600;
+    -webkit-text-stroke: 2px black;
+    border-bottom: 5px rgb(45, 45, 45) solid;
+    padding: 5px;
+}
+
+#nav {
+    background-color: rgb(95, 95, 95);
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-bottom: 5px rgb(45, 45, 45) solid;
+}
+
+.navb {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+    background-color: rgb(0, 110, 0);
+    border-radius: 5px;
+    border: 3px rgb(70, 70, 70) solid;
+}
+
+.ln {
+    color: white;
+    text-decoration: none;
+}
+
+.navb:hover {
+    font-size: 20px;
+    font-family: monospace;
+    background-color: rgb(0, 140, 0);
+}
+
+.ln:hover {
+    color: rgb(0, 50, 0);
+    text-decoration: none;
+}
+
+.ln:active {
+    color: white;
+    background-color: rgb(0, 140, 0);
+}
+
+#languages, #coding, #htc {
+    text-align: center;
+    font-family: monospace;
+    background-color: rgb(95, 95, 95);
+    padding: 5px;
+    border-bottom: 5px rgb(45, 45, 45) solid;
+}
+
+b {
+    font-size: 2.2em;
+}
+
+.paragraph {
+    font-size: 2em;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#footer {
+    text-align: center;
+    font-family: monospace;
+    color: black;
+    background-color: rgb(95, 95, 95);
+    padding: 1px;
+}
+
+#myCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the canvas is behind the other content */
+}

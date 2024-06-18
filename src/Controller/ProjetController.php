@@ -1,6 +1,6 @@
 <?php
 
-// src/Controller/ProjetController.php
+/// src/Controller/ProjetController.php
 
 namespace App\Controller;
 
@@ -19,11 +19,11 @@ class ProjetController extends AbstractController
     }
 
     /**
-     * @Route("/projet/apimages", name="projet_apimages")
+     * @Route("/projet/devin", name="projet_devin")
      */
-    public function apimages(): Response
+    public function devin(): Response
     {
-        return $this->render('projet/apimages.html.twig');
+        return $this->render('projet/devin.html.twig');
     }
 
     /**
@@ -40,6 +40,14 @@ class ProjetController extends AbstractController
     public function fedhubs(): Response
     {
         return $this->render('projet/fedhubs.html.twig');
+    }
+
+    /**
+     * @Route("/projet/apimages", name="projet_apimages")
+     */
+    public function apimages(): Response
+    {
+        return $this->render('projet/apimages.html.twig');
     }
 
     // Ajoutez d'autres méthodes et routes pour vos projets ici

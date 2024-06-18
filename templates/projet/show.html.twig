@@ -1,0 +1,27 @@
+{# templates/projet/show.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails du Projet{% endblock %}
+
+{% block body %}
+    <h1>Détails du Projet</h1>
+
+    <table>
+        <tr>
+            <th>Nom</th>
+            <td>{{ projet.nom }}</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>{{ projet.description }}</td>
+        </tr>
+    </table>
+
+    <a href="{{ path('projet_index') }}">Retour à la liste</a>
+    <a href="{{ path('projet_edit', {'id': projet.id}) }}">Modifier</a>
+
+    {{ form_start(delete_form) }}
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ projet.id) }}">
+        <button class="btn btn-danger">Supprimer</button>
+    {{ form_end(delete_form) }}
+{% endblock %}
