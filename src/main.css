@@ -1,0 +1,27 @@
+/* Réinitialise les marges et les paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stylise le corps du document */
+  body {
+    font-family: 'Arial', sans-serif; /* Définit la police de caractères */
+    background-color: #f4f4f4;       /* Couleur de fond */
+    color: #333;                     /* Couleur du texte */
+    line-height: 1.6;                /* Espacement des lignes */
+    padding: 20px;                   /* Padding autour du contenu */
+  }
+  
+  /* Stylise les titres h1 */
+  h1 {
+    color: #444;                     /* Couleur du texte pour h1 */
+    margin-bottom: 20px;             /* Espace après le h1 */
+  }
+  
+  /* Stylise les paragraphes */
+  p {
+    margin-bottom: 20px;             /* Espace après chaque paragraphe */
+  }
+  

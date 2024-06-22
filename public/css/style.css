@@ -3,7 +3,7 @@
 :root {
     --text: hsl(0, 0%, 99%);
     --textDim: hsl(0, 0%, 60%);
-    --background: hsl(0, 0%, 7%);
+    --background: hsl(284, 51.7%, 34.1%);
     --primary: hsl(261, 100%, 65%);
     --primaryBg: hsla(155, 100%, 65%, 1%);
     --primaryHi: hsla(155, 100%, 75%, 25%);
@@ -254,3 +254,16 @@ footer {
     height: 100%;
   }
   
+  /* css/style.css */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,8 +1,31 @@
-{# templates/projet/apimages.html.twig #}
+{# templates/apimages.html.twig #}
 {% extends 'base.html.twig' %}
 
-{% block title %}Projet Apimages{% endblock %}
+{% block title %}Projet Association Centre Social{% endblock %}
 
 {% block body %}
-    <h1>Bienvenue sur la page Projet Apimages</h1>
+    <section id="project-description">
+        <h1>Projet Association Centre Social</h1>
+        <p>En tant que bénévole pour le Centre social, je travaille sur un projet pour offrir aux jeunes un gymnase où ils peuvent jouer au football. Ce projet vise à promouvoir l'activité physique, l'esprit d'équipe et un mode de vie sain parmi les jeunes de notre communauté.</p>
+    </section>
+
+    <section id="project-details">
+        <h2>Détails du Projet</h2>
+        <ul>
+            <li>Objectif : un gymnase pour les jeunes.</li>
+            <li>Activités : Football, basket-ball, et autres sports.</li>
+            <li>Bénéficiaires : Jeunes de 6 à 18 ans.</li>
+            <li>Lieu : Centre social communautaire de cusset Lyon Villeurbanne .</li>
+        </ul>
+    </section>
+
+    <section id="project-images">
+        <h2>Galerie de Photos</h2>
+        <div class="image-gallery">
+            {# Ajoutez vos images ici #}
+            <img src="{{ asset('images/project1.jpg') }}" alt="Photo du projet 1">
+            <img src="{{ asset('images/project2.jpg') }}" alt="Photo du projet 2">
+            <img src="{{ asset('images/project3.jpg') }}" alt="Photo du projet 3">
+        </div>
+    </section>
 {% endblock %}
