@@ -1,0 +1,35 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/build/runtime.js",
+        "/build/app.js"
+      ],
+      "css": [
+        "/build/app.css"
+      ]
+    },
+    "index": {
+      "js": [
+        "/build/runtime.js",
+        "/build/index.js"
+      ]
+    },
+    "formation": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/formation.css"
+      ]
+    },
+    "index_style": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/index_style.css"
+      ]
+    }
+  }
+}

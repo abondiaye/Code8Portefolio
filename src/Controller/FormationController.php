@@ -8,9 +8,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class FormationController extends AbstractController
 {
-    #[Route('/formation', name: 'formation')]
+    #[Route('/formation', name: 'app_formation')]
     public function index(): Response
     {
-        return $this->render('formation/index.html.twig');
+        return $this->render('formation/formation.html.twig', [
+            'controller_name' => 'FormationController',
+        ]);
     }
 }
