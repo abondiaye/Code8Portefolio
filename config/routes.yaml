@@ -1,22 +1,69 @@
+# config/routes.yaml
+
 controllers:
-    resource: ../src/Controller/
+    resource: '../src/Controller/'
     type: annotation
 
+# Route pour le dashboard
+app_dashboard:
+    path: /dashboard
+    controller: App\Controller\DashboardController::index
 
+# Route pour l'administration - page de login
 admin_login:
     path: /admin/login
     controller: App\Controller\AdminController::login
 
+# Route pour le tableau de bord de l'administration
+admin_dashboard:
+    path: /admin/dashboard
+    controller: App\Controller\AdminController::dashboard
+
+# Route pour la page d'accueil
 home:
     path: /
     controller: App\Controller\HomeController::index
 
+# Route pour la gestion des formations
 formation:
     path: /formation
     controller: App\Controller\FormationController::index
 
+# Route pour la gestion des projets
 projet:
     path: /projet
     controller: App\Controller\ProjetController::index
 
+# Route pour le portfolio
+portfolio:
+    path: /portfolio
+    controller: App\Controller\PortfolioController::index
 
+# Route pour les contacts
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::index
+
+# Routes pour le back office des compétences
+back_office_skill:
+    resource: '../src/Controller/BackOffice/SkillController.php'
+    type: annotation
+    prefix: /admin/skill
+
+# Routes pour le back office des projets
+back_office_project:
+    resource: '../src/Controller/BackOffice/ProjectController.php'
+    type: annotation
+    prefix: /admin/project
+
+# Routes pour le back office des expériences
+back_office_experience:
+    resource: '../src/Controller/BackOffice/Experience/*'
+    type: annotation
+    prefix: /admin/experience
+
+# Routes pour le front office des compétences
+front_office_skill:
+    resource: '../src/Controller/FrontOffice/SkillController.php'
+    type: annotation
+    prefix: /skill

@@ -1,0 +1,11 @@
+{# templates/backoffice/project/list.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Liste des projets</h1>
+    <ul>
+        {% for project in projects %}
+            <li>{{ project.title }} - <a href="{{ path('backoffice_project_edit', {id: project.id}) }}">Modifier</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

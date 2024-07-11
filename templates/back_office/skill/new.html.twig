@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer une nouvelle compétence{% endblock %}
+
+{% block body %}
+    <h1>Créer une nouvelle compétence</h1>
+
+    {# Formulaire de création de compétence #}
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button class="btn">Créer</button>
+    {{ form_end(form) }}
+
+    {# Lien pour retourner à la liste des compétences #}
+    <a href="{{ path('skill_index') }}">Retour à la liste</a>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des Compétences{% endblock %}
+
+{% block body %}
+    <h1>Liste des Compétences</h1>
+
+    <a href="{{ path('front_office_skill_new') }}">Ajouter une nouvelle compétence</a>
+
+    {% if skills is not empty %}
+        <ul>
+            {% for skill in skills %}
+                <li>
+                    <a href="{{ path('front_office_skill_show', {'id': skill.id}) }}">{{ skill.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <

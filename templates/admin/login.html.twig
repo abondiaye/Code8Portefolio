@@ -1,0 +1,17 @@
+{# templates/admin/login.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin Login{% endblock %}
+
+{% block body %}
+    <h1>Connexion Administrateur</h1>
+    <form action="{{ path('admin_dashboard') }}" method="post">
+        <label for="username">Nom d'utilisateur :</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Connexion</button>
+    </form>
+{% endblock %}

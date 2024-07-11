@@ -19,16 +19,17 @@
 <!--Navbar Links-->
 <nav id="nav">
   <ul>
-    <li class="shape-circle circle-one"><a href="#">Contact</a></li>
-    <li class="shape-circle circle-two"><a href="#">Projets</a></li>
-    <li class="shape-circle circle-three"><a href="#">Portefolio</a></li>
-    <li class="shape-circle circle-five"><a href="#">Home</a></li>
+ <li class="shape-circle circle-one"><a href="{{ path('contact') }}">Contact</a></li>
+                <li class="shape-circle circle-two"><a href="{{ path('projet') }}">Projets</a></li>
+                <li class="shape-circle circle-three"><a href="{{ path('portfolio') }}">Portfolio</a></li>
+                <li class="shape-circle circle-five"><a href="{{ path('home') }}">Home</a></li>
+                <li class="shape-circle circle-admin"><a href="{{ path('admin_login') }}">Admin</a></li>
   </ul>
 </nav>
 
 <!--Main Body Content-->
 <article class="container">
-  <h1>Portfolio<br> N'DIAYE<br> Abdoulaye
-  <p>Inspired by Google Material Design and Circles</p>
+  <h1>Portfolio</h2><br> <h1>N'DIAYE<br> Abdoulaye</h2>
+  <h3>Inspired by me</h3>
 </article>
 {% endblock %}

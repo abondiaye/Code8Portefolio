@@ -1,0 +1,3 @@
+# config/custom_parameters.yaml
+parameters:
+    nom_du_parametre: 'valeur_du_parametre'

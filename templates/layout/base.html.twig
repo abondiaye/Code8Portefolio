@@ -2,30 +2,29 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Welcome!{% endblock %}</title>
-    {% block stylesheets %}
-        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
-    {% endblock %}
+    <title>{% block title %}Bienvenue!{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 <body>
     <header>
-        <!-- En-tête de votre site -->
+          <!-- Navbar Links -->
+        <nav id="nav">
+            <ul>
+                <li class="shape-circle circle-one"><a href="{{ path('contact') }}">Contact</a></li>
+                <li class="shape-circle circle-two"><a href="{{ path('projet') }}">Projets</a></li>
+                <li class="shape-circle circle-three"><a href="{{ path('portfolio') }}">Portfolio</a></li>
+                <li class="shape-circle circle-five"><a href="{{ path('home') }}">Home</a></li>
+                <li class="shape-circle circle-admin"><a href="{{ path('admin_login') }}">Admin</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <!-- Menu de navigation -->
-    </nav>
 
     <main>
         {% block body %}{% endblock %}
     </main>
 
     <footer>
-        <!-- Pied de page -->
+        <p>&copy; 2024 Votre Nom. Tous droits réservés.</p>
     </footer>
-
-    {% block javascripts %}
-        <script src="{{ asset('build/app.js') }}"></script>
-    {% endblock %}
 </body>
 </html>

@@ -1,0 +1,11 @@
+{# templates/backoffice/experience/list.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Liste des expériences</h1>
+    <ul>
+        {% for experience in experiences %}
+            <li>{{ experience.title }} - <a href="{{ path('backoffice_experience_edit', {id: experience.id}) }}">Modifier</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

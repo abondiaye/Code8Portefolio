@@ -1,0 +1,45 @@
+{# templates/backoffice/skill/index.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}Gestion des Compétences{% endblock %}
+
+{% block body %}
+    <h1>Gestion des Compétences</h1>
+
+    {# Lien pour créer une nouvelle compétence #}
+    <a href="{{ path('skill_new') }}">Créer une nouvelle compétence</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Niveau</th>
+                <th>Catégorie</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {# Boucle pour afficher chaque compétence #}
+        {% for skill in skills %}
+            <tr>
+                <td>{{ skill.id }}</td>
+                <td>{{ skill.name }}</td>
+                <td>{{ skill.level }}</td>
+                <td>{{ skill.category }}</td>
+                <td>
+                    {# Lien pour voir les détails d'une compétence #}
+                    <a href="{{ path('backoffice_skill_show', {'id': skill.id}) }}">Voir</a>
+                    {# Lien pour éditer une compétence #}
+                    <a href="{{ path('skill_edit', {'id': skill.id}) }}">Modifier</a>
+                    {# Formulaire pour supprimer une compétence #}
+                    <form method="post" action="{{ path('skill_delete', {'id': skill.id}) }}" style="display:inline-block">
+                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ skill.id) }}">
+                        <button type="submit">Supprimer</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

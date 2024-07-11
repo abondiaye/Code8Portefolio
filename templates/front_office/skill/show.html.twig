@@ -1,0 +1,19 @@
+{# templates/backoffice/skill/show.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}Détail de la Compétence{% endblock %}
+
+{% block body %}
+    <h1>{{ skill.name }}</h1>
+
+    <p>{{ skill.description }}</p>
+
+    <a href="{{ path('front_office_skill_edit', {'id': skill.id}) }}">Modifier</a>
+
+    <form method="post" action="{{ path('front_office_skill_delete', {'id': skill.id}) }}" onsubmit="return confirm('Voulez-vous vraiment supprimer cette compétence ?');">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ skill.id) }}">
+        <button class="btn">Supprimer</button>
+    </form>
+
+    <a href="{{ path('front_office_skill_index') }}">Retour à la liste</a>
+{% endblock %}

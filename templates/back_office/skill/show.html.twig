@@ -1,0 +1,42 @@
+{# templates/backoffice/skill/show.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails de la compétence{% endblock %}
+
+{% block body %}
+    <h1>Détails de la compétence</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <td>{{ skill.id }}</td>
+        </tr>
+        <tr>
+            <th>Nom</th>
+            <td>{{ skill.name }}</td>
+        </tr>
+        <tr>
+            <th>Niveau</th>
+            <td>{{ skill.level }}</td>
+        </tr>
+        <tr>
+            <th>Catégorie</th>
+            <td>{{ skill.category }}</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>{{ skill.description }}</td>
+        </tr>
+    </table>
+
+    {# Lien pour retourner à la liste des compétences #}
+    <a href="{{ path('skill_index') }}">Retour à la liste</a>
+    {# Lien pour éditer la compétence #}
+    <a href="{{ path('skill_edit', {'id': skill.id}) }}">Modifier</a>
+    {# Formulaire pour supprimer la compétence #}
+    <form method="post" action="{{ path('skill_delete', {'id': skill.id}) }}" style="display:inline-block">
+        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ skill.id) }}">
+        <button type="submit">Supprimer</button>
+    </form>
+{% endblock %}
