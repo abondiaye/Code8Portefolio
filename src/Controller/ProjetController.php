@@ -27,11 +27,11 @@ class ProjetController extends AbstractController
     }
 
     /**
-     * @Route("/projet/portfolio", name="projet_portfolio")
+     * @Route("/projet/portefolio", name="projet_portefolio")
      */
-    public function portfolio(): Response
+    public function portefolio(): Response
     {
-        return $this->render('projet/portfolio.html.twig');
+        return $this->render('projet/portefolio.html.twig');
     }
 
     /**

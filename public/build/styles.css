@@ -1,0 +1,61 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/@symfony/webpack-encore/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].oneOf[1].use[1]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[4].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].oneOf[1].use[3]!./assets/css/styles.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 70%;
+  }
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 1rem;
+}
+header nav .bars {
+  cursor: pointer;
+}
+header nav .sitename {
+  font-size: 1.5rem;
+  color: #fff;
+}
+header nav .menu {
+  margin: 0 1rem;
+}
+header nav .menu a {
+  color: #fff;
+  text-decoration: none;
+}
+header nav .menu a:hover {
+  text-decoration: underline;
+}
+header nav .material-icons {
+  fill: #fff;
+  cursor: pointer;
+}
+
+/* Ajoutez d'autres styles nécessaires pour vos pages ici */
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGVzLmNzcyIsIm1hcHBpbmdzIjoiOzs7QUFBQSxnQkFBZ0I7QUFRaEI7RUFDRTtFQUNBO0VBQ0E7QUFORjs7QUFTQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0FBTkY7O0FBU0E7RUFDRTtFQUNBO0VBQ0E7QUFORjs7QUFVRTtFQUNFO0lBQ0U7RUFQSjtBQUNGOztBQVlFO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQVRKO0FBV0k7RUFDRTtBQVROO0FBWUk7RUFDRTtFQUNBO0FBVk47QUFhSTtFQUNFO0FBWE47QUFhTTtFQUNFO0VBQ0E7QUFYUjtBQWFRO0VBQ0U7QUFYVjtBQWdCSTtFQUNFO0VBQ0E7QUFkTjs7QUFtQkEsNEQiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3RyZS1wcm9qZXQvLi9hc3NldHMvY3NzL3N0eWxlcy5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgXCJib3VyYm9uXCI7XG5cbkBtaXhpbiBsaW5lYXItZ3JhZGllbnQoJGRpcmVjdGlvbiwgJGNvbG9yLXN0b3BzLi4uKSB7XG4gIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgkZGlyZWN0aW9uLCAkY29sb3Itc3RvcHMuLi4pO1xufVxuXG4kbGd0Qmx1ZTogIzQzYmVkNjtcblxuKiwgKjpiZWZvcmUsICo6YWZ0ZXIge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICBtYXJnaW46IDA7XG4gIHBhZGRpbmc6IDA7XG59XG5cbi5pbm5lciB7XG4gIGNvbnRlbnQ6IFwiXCI7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA1MCU7XG4gIGxlZnQ6IDUwJTtcbn1cblxuaHRtbCwgYm9keSB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG5cbmJvZHkge1xuICBAbWVkaWEgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgICAmIHtcbiAgICAgIGZvbnQtc2l6ZTogNzAlO1xuICAgIH1cbiAgfVxufVxuXG5oZWFkZXIge1xuICBuYXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzMzMztcbiAgICBwYWRkaW5nOiAxcmVtO1xuXG4gICAgLmJhcnMge1xuICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIH1cblxuICAgIC5zaXRlbmFtZSB7XG4gICAgICBmb250LXNpemU6IDEuNXJlbTtcbiAgICAgIGNvbG9yOiAjZmZmO1xuICAgIH1cblxuICAgIC5tZW51IHtcbiAgICAgIG1hcmdpbjogMCAxcmVtO1xuXG4gICAgICBhIHtcbiAgICAgICAgY29sb3I6ICNmZmY7XG4gICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cblxuICAgIC5tYXRlcmlhbC1pY29ucyB7XG4gICAgICBmaWxsOiAjZmZmO1xuICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIH1cbiAgfVxufVxuXG4vKiBBam91dGV6IGQnYXV0cmVzIHN0eWxlcyBuw6ljZXNzYWlyZXMgcG91ciB2b3MgcGFnZXMgaWNpICovXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=*/

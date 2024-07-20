@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Mon Portfolio{% endblock %}</title>
+    <title>{% block title %}Mon portefolio{% endblock %}</title>
     <link rel="stylesheet" href="{{ asset('build/formation.css') }}">
     {% block stylesheets %}{% endblock %}
 </head>
@@ -11,6 +11,7 @@
     {% include 'layout/footer.html.twig' %}
     <script src="{{ asset('build/runtime.js') }}"></script>
     <script src="{{ asset('build/formation.js') }}"></script>
+    
     {% block javascripts %}{% endblock %}
 </body>
 </html>

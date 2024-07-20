@@ -4,9 +4,27 @@
       "js": [
         "/build/runtime.js",
         "/build/app.js"
+      ]
+    },
+    "contact": {
+      "js": [
+        "/build/runtime.js",
+        "/build/contact.js"
+      ]
+    },
+    "footer": {
+      "js": [
+        "/build/runtime.js",
+        "/build/footer.js"
+      ]
+    },
+    "formation": {
+      "js": [
+        "/build/runtime.js",
+        "/build/formation.js"
       ],
       "css": [
-        "/build/app.css"
+        "/build/formation.css"
       ]
     },
     "index": {
@@ -15,12 +33,51 @@
         "/build/index.js"
       ]
     },
-    "formation": {
+    "portefolio": {
+      "js": [
+        "/build/runtime.js",
+        "/build/portefolio.js"
+      ],
+      "css": [
+        "/build/portefolio.css"
+      ]
+    },
+    "project": {
+      "js": [
+        "/build/runtime.js",
+        "/build/project.js"
+      ]
+    },
+    "app_style": {
       "js": [
         "/build/runtime.js"
       ],
       "css": [
-        "/build/formation.css"
+        "/build/app_style.css"
+      ]
+    },
+    "contact_style": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/contact_style.css"
+      ]
+    },
+    "footer_style": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/footer_style.css"
+      ]
+    },
+    "formation_style": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/formation_style.css"
       ]
     },
     "index_style": {
@@ -29,6 +86,30 @@
       ],
       "css": [
         "/build/index_style.css"
+      ]
+    },
+    "portefolio_style": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/portefolio_style.css"
+      ]
+    },
+    "project_style": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/project_style.css"
+      ]
+    },
+    "styles": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/styles.css"
       ]
     }
   }

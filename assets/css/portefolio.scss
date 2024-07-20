@@ -1,0 +1,169 @@
+
+header {
+  margin-bottom: 0;
+}
+h1 {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 60px;
+  animation: pulsate 2.5s infinite alternate;
+  color: #fff;
+}
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgba(255, 12, 12, 0.8),
+      0 0 80px rgba(255, 12, 12, 0.8),
+      0 0 90px rgba(255, 12, 12, 0.8),
+      0 0 100px rgba(255, 12, 12, 0.8),
+      0 0 150px rgba(255, 12, 12, 0.8);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+@keyframes pulsate {
+  100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgba(255, 12, 12, 0.8),
+      0 0 80px rgba(255, 12, 12, 0.8),
+      0 0 90px rgba(255, 12, 12, 0.8),
+      0 0 100px rgba(255, 12, 12, 0.8),
+      0 0 150px rgba(255, 12, 12, 0.8);
+  }
+  0% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px rgba(255, 12, 12, 0.8),
+      0 0 45px rgba(255, 12, 12, 0.8),
+      0 0 55px rgba(255, 12, 12, 0.8),
+      0 0 70px rgba(255, 12, 12, 0.8),
+      0 0 80px rgba(255, 12, 12, 0.8);
+  }
+}
+h2 {
+  text-align: center;
+  margin-bottom: 2%;
+  color: rgba(255, 12, 12, 0.8);
+}
+h3 {
+  margin-bottom: 8%;
+  font-family: 'Old Standard TT', serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "formation experiences"
+    "portefo_int portefo_int";
+}
+.formation {
+  grid-area: formation;
+}
+.experiences {
+  grid-area: experiences;
+}
+.portefo_int {
+  grid-area: portefo_int;
+}
+.formation, .portefo_int, .experiences {
+  overflow: hidden;
+  width: 60%;
+  margin-left: 20%;
+  padding: 2%;
+  color: white;
+  box-shadow: rgba(255, 12, 12, 0.8) 0px 3px 4px, rgba(255, 12, 12, 0.8) 0px -12px 20px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.formation:hover, .portefo_int:hover, .experiences:hover, footer:hover {
+  transition: transform .3s;
+  transform: scale(1.35);
+}
+.portefo_int {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "portefolio interets";
+}
+.portefolio {
+  grid-area: portefolio;
+}
+.interets {
+  grid-area: interets;
+}
+.formation, .portefo_int, .experiences {
+  text-align: center;
+}
+.portefo_int {
+  margin-top: 15%
+}
+footer {
+  color: white;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  margin-left: 80%;
+  text-align: center;
+  width: 40%;
+  padding: 5%;
+}
+.text-contact {
+  margin-top: 0.5%;
+}
+.forma {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.exp {
+  margin-top: 3%;
+}
+.hr_titre {
+  border: 1px solid rgba(255, 12, 12, 0.8);
+  margin-top: 5%;
+  width: 50%;
+  margin-left: 25%;
+}
+.html, .js, .py {
+  height: 8px;
+  border: 1px solid black;
+}
+.p_html {
+  background-color: rgba(255, 76, 76, 0.8);
+  width: 70%;
+  height: 100%;
+}
+.p_js {
+  background-color: rgba(255, 76, 76, 0.8);
+  width: 20%;
+  height: 100%;
+}
+.p_py {
+  background-color: rgba(255, 76, 76, 0.8);
+  width: 30%;
+  height: 100%;
+  margin-bottom: 3%;
+}
+.formation {
+  height: 110%;
+}
+.canis {
+  margin-top: 50%;
+}
+.experiences {
+  height: 70%;
+}

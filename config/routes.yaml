@@ -34,10 +34,10 @@ projet:
     path: /projet
     controller: App\Controller\ProjetController::index
 
-# Route pour le portfolio
-portfolio:
-    path: /portfolio
-    controller: App\Controller\PortfolioController::index
+# Route pour le portefolio
+portefolio:
+    path: /portefolio
+    controller: App\Controller\PortefolioController::index
 
 # Route pour les contacts
 contact:

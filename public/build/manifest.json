@@ -1,8 +1,20 @@
 {
-  "build/app.css": "/build/app.css",
   "build/app.js": "/build/app.js",
-  "build/index.js": "/build/index.js",
+  "build/contact.js": "/build/contact.js",
+  "build/footer.js": "/build/footer.js",
   "build/formation.css": "/build/formation.css",
+  "build/formation.js": "/build/formation.js",
+  "build/index.js": "/build/index.js",
+  "build/portefolio.css": "/build/portefolio.css",
+  "build/portefolio.js": "/build/portefolio.js",
+  "build/project.js": "/build/project.js",
+  "build/app_style.css": "/build/app_style.css",
+  "build/contact_style.css": "/build/contact_style.css",
+  "build/footer_style.css": "/build/footer_style.css",
+  "build/formation_style.css": "/build/formation_style.css",
   "build/index_style.css": "/build/index_style.css",
+  "build/portefolio_style.css": "/build/portefolio_style.css",
+  "build/project_style.css": "/build/project_style.css",
+  "build/styles.css": "/build/styles.css",
   "build/runtime.js": "/build/runtime.js"
 }

@@ -1,0 +1,86 @@
+{% extends 'layout/base.html.twig' %}
+
+{% block title %}Portefolio{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/portefolio_style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap">
+{% endblock %}
+
+{% block body %}
+<header>
+    <h1>N'DIAYE Abdoulaye</h1>
+    <hr class="hr_titre">
+</header>
+<body>
+<div class="container">
+    <div class="formation">
+        <h2 class="forma">DIPLOME/COMPETENCES</h2>
+        <ul style="list-style-type:none">
+            <li><p> B.T.S DEVELOPPER WEB FULL STACK CCI Beaujolais limas / 2023 /p></li><br>
+            <li><p> Baccalauréat général Technicien assictance informatique obtenu en 2016 a l'AFPA Venissieux LYON</p></li><br>
+            <li><p> C .A.P AGENT D'ACCUEIL ET CONDUITE ROUTIÈRE C .A.P AGENT D'ACCUEIL
+ET CONDUITE ROUTIÈRE
+Veolia Villette d'anton / 2007 Veolia Villette d'anton / 2007 /p></li><br>
+            <li><p> MENTION COMPLÉMENTAIRE TRAITEUR Lycée Hélène Boucher Vénissieux / 2004 /p></li><br> 
+            <li><p> C.A.P AFT-IFTIM / Villette d'anthon /2008 /p></li><br>
+
+
+            <h4>Langues : </h4><br>
+            <li><p>- Anglais niveau intermédiaire</p></li>
+            <li><p>- Espagnol niveau intermédiaire</p></li><br>
+            <h4>Programmation :</h4><br>
+            <li>HTML/CSS <br></li><br>
+            <div class="html"><div class="p_html"></div></div><br>
+            <li>Javascript</li><br>
+            <div class="js"><div class="p_js"></div></div><br>
+            <li>Python</li><br>
+            <div class="py"><div class="p_py"></div></div><br>
+        </ul>
+    </div>
+    <div class="experiences">
+        <h2 class="exp"> EXPERIENCES</h2>
+        <h3> Préparateur de commandes, Leroy Merlin<br>(Janvier-Mars 2020)</h3>
+        <h3>Poste polyvalent, Picard<br>(2017-2018)</h3>
+        <h3> Technicien Polyvalent, Master-Technologie<br>(2018-2022)</h3>
+        <h3>MTECHNICIEN VENTES MATERIELS ET
+EQUIPEMENTS MULTIMEDIA
+• Expertise en solutions de télécommunication: vente
+de téléphones et accessoires multimédia haut de
+gamme.
+• Maîtrise technique en réparation de dispositifs
+mobiles et informatiques, garantissant un service
+après-vente de qualité.
+• Pro de la réparation tech
+• Performance en vente +20%
+• Satisfaction client 95%<br>(2018)</h3>
+    </div>
+    <div class="portefo_int">
+        <div class="portefolio">
+            <h2> PORTEFOLIO </h2><br>
+            <p><a href="https://villacanis.com" target=_blank style="font-weight:600;color:white;text-decoration:underline">www.villacanis.com</a><br>
+            <br>
+            <a href="http://portefoliojoannab.000webhostapp.com" target=_blank style="font-weight:600;color:white;text-decoration:underline">Portefolio Joanna B</a><br>
+        </div>
+        <div class="interets">
+            <h2>CENTRE D'INTERETS</h2><br>
+            <ul style="list-style-type:none">
+                <li>Le sport</li><br>
+                <li>La lecture</li><br>
+                <li>Les jeux-video</li><br>
+                <li>Les voyages</li><br>
+                <li>Le cinema</li><br>
+                <li>Les nouvelles technologies</li><br>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <h2 class="contact">CONTACT </h2>
+    <p class="text-contact">Téléphone <a style="font-weight:800">06.98.29.41.21</a><br>
+        Mail <a href="mailto:christophe.carbin@gmail.com" style="font-weight: 800; color:rgba(255, 76, 76, 0.8); text-decoration:underline">christophe.carbin@gmail.com</a>
+    </p>
+    <hr class="hr_titre">
+</footer>
+{% endblock %}

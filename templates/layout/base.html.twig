@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <title>{% block title %}Bienvenue!{% endblock %}</title>
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/app_style.css') }}">
+    {% block stylesheets %}{% endblock %}
 </head>
 <body>
-    <header>
-          <!-- Navbar Links -->
-        <nav id="nav">
-            <ul>
-                <li class="shape-circle circle-one"><a href="{{ path('contact') }}">Contact</a></li>
-                <li class="shape-circle circle-two"><a href="{{ path('projet') }}">Projets</a></li>
-                <li class="shape-circle circle-three"><a href="{{ path('portfolio') }}">Portfolio</a></li>
-                <li class="shape-circle circle-five"><a href="{{ path('home') }}">Home</a></li>
-                <li class="shape-circle circle-admin"><a href="{{ path('admin_login') }}">Admin</a></li>
-            </ul>
-        </nav>
-    </header>
+    {% block header %}
+        {% include 'layout/header.html.twig' %}
+    {% endblock %}
 
     <main>
         {% block body %}{% endblock %}
     </main>
 
-    <footer>
-        <p>&copy; 2024 Votre Nom. Tous droits réservés.</p>
-    </footer>
+    {% block footer %}
+        {% include 'layout/footer.html.twig' %}
+    {% endblock %}
+
+    <script src="{{ asset('build/runtime.js') }}"></script>
+    <script src="{{ asset('build/app.js') }}"></script>
+    {% block javascripts %}{% endblock %}
 </body>
 </html>

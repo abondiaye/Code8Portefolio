@@ -16,7 +16,9 @@
   "author": "abondiaye",
   "license": "ISC",
   "dependencies": {
+    "aos": "^2.3.4",
     "gsap": "^3.12.5",
+    "parallax-js": "^3.1.0",
     "particles.js": "^2.0.0"
   },
   "devDependencies": {
