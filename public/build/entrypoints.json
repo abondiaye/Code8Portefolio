@@ -37,9 +37,6 @@
       "js": [
         "/build/runtime.js",
         "/build/portefolio.js"
-      ],
-      "css": [
-        "/build/portefolio.css"
       ]
     },
     "project": {

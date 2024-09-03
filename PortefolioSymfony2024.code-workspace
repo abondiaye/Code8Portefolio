@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "PortefolioSymfony2024",
+			"path": "."
+		},
+		{
+			"name": "assets",
+			"path": "../../../Téléchargements/portfolio-master (1)/portfolio-master/assets"
+		},
+		{
+			"path": "../../../Téléchargements/portfolio-master (1)/portfolio-master/src"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,305 @@
+{# templates/portefolio/resume.html.twig #}
+{% extends 'layout/base.html.twig' %}
+
+{% block title %}Online Resume{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <!-- Ajoute ici le CSS -->
+    <style>
+        body {
+            font-family: Verdana, Roboto, Open Sans;
+            font-size: 12px;
+        }
+
+        main {
+            padding-left: 0;
+        }
+
+        i {
+            vertical-align: middle;
+        }
+
+        .cv-wrapper {
+            width: 90%;
+            margin: auto;
+        }
+
+        .cv-spclink {
+            font-weight: bold !important;
+        }
+
+        ul > li, ol > li,  {
+            text-align: justify;
+        }
+
+        .cv-co {
+            text-align: justify;
+        }
+
+        .cv-topborder {
+            height: 15px;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+        }
+
+        .cv-photowrapper {
+            width: 125px;
+            padding: 5px;
+            border-radius: 2px;
+            margin: auto;
+        }
+
+        .cv-personalinfo {
+            font-weight: bold;
+        }
+
+        .cv-title {
+            font-family: Orbitron, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .cv-subtitle {
+            font-family: Orbitron, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .cv-sub {
+            font-weight: bold;
+        }
+
+        .cv-listtitle {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .cv-list {
+            margin-top: 0;
+        }
+
+        .cv-spctext {
+            font-style: italic;
+        }
+
+        .new.badge {
+            font-size: 8px;
+        }
+
+        .text-right {
+            text-align: left;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .cv-pinfogroup {
+            text-align: center;
+        }
+
+        .cv-hide {
+            animation: toggleHide 0.2s ease-in-out forwards;
+        }
+
+        .cv-show {
+            animation: toggleShow 0.3s ease-in-out forwards;
+        }
+
+        @keyframes toggleShow {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes toggleHide {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @media (min-width: 993px) {
+            .text-right {
+                text-align: right;
+            }
+
+            main {
+                padding-left: 300px;
+            }
+
+            .cv-pinfogroup {
+                text-align: left;
+            }
+
+            .cv-photowrapper {
+                margin: 0;
+                float: right;
+            }
+        }
+
+        .cv-printable {
+            display: none;
+        }
+
+        @media print {
+            @page {
+                margin: 0.5in;
+            }
+
+            .col.s12 {
+                page-break-inside: auto;
+            }
+
+            .card-content {
+                page-break-after: avoid;
+            }
+
+            header {
+                display: none;
+            }
+
+            .divider {
+                margin-bottom: 10px;
+            }
+
+            .text-right {
+                text-align: right;
+            }
+
+            .cv-pinfogroup {
+                text-align: left;
+            }
+
+            .cv-photowrapper {
+                width: 1.25in;
+                margin: 0;
+                float: right;
+            }
+
+            .cv-nonprintable {
+                display: none;
+            }
+
+            .cv-printable {
+                display: inline;
+            }
+
+            .cv-title {
+                font-size: 16px;
+            }
+
+            .cv-listtitle {
+                page-break-after: avoid;
+            }
+
+            .cv-list {
+                page-break-before: avoid;
+            }
+
+            .cv-subtitle {
+                font-size: 12px;
+                text-align: left;
+            }
+
+            .new.badge {
+                font-size: 10px !important;
+            }
+
+            .cv-sub {
+                font-size: 10px;
+                text-align: left;
+                clear: both;
+            }
+
+            body {
+                font-size: 12px;
+            }
+
+            .icon-smaller {
+                transform-origin: top left;
+                transform: scale(1.5);
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+<header>
+    <div class="navbar-fixed hide-on-large-only">
+        <nav class="grey darken-3 z-depth-3">
+            <div class="nav-wrapper">
+                <a href="#" data-activates="cv-nav" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <a href="#" class="brand-logo center">Online Resume</a>
+            </div>
+        </nav>
+    </div>
+    <ul id="cv-nav" class="side-nav fixed center-align grey darken-3 z-depth-3">
+        <li class="cv-title light-green">
+            <a href="#fullname" class="cv-spclink waves-effect waves-light">N'DIAYE Abdoulaye</a>
+        </li>
+        <li class="cv-title">
+            <a href="#objective" class="light-green-text waves-effect waves-light">Career Objective</a>
+        </li>
+        <li class="cv-title">
+            <a href="#skill" class="light-green-text waves-effect waves-light">Technical Skills</a>
+        </li>
+        <li class="cv-title">
+            <a href="#experience" class="light-green-text waves-effect waves-light">Experience</a>
+        </li>
+        <li class="cv-title">
+            <a href="#education" class="light-green-text waves-effect waves-light">Education</a>
+        </li>
+        <li class="cv-title">
+            <a href="#honoraward" class="light-green-text waves-effect waves-light">Honors/Awards</a>
+        </li>
+        <li class="cv-title white">
+            <a href="#!" class="light-green-text text-darken-4 waves-effect waves-green" onclick="print_doc('#cv-printable')">Print Resume</a>
+        </li>
+    </ul>
+</header>
+<main class="cv-nonprintable">
+    <div class="cv-wrapper container">
+        <div class="card z-depth-4 center grey lighten-3">
+            <div class="divider cv-topborder light-green"></div>
+            <!-- Ajoute ici le contenu de ton CV -->
+        </div>
+    </div>
+</main>
+
+<!-- for printing -->
+<main class="cv-printable">
+    <div class="cv-wrapper container">
+        <div class="center">
+            <!-- Ajoute ici le contenu à imprimer -->
+        </div>
+    </div>
+</main>
+<footer>
+</footer>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        // Colle ici ton JavaScript
+        function print_doc(elementId) {
+            const printContents = document.querySelector(elementId).innerHTML;
+            const originalContents = document.body.innerHTML;
+
+            document.body.innerHTML = printContents;
+
+            window.print();
+
+            document.body.innerHTML = originalContents;
+        }
+    </script>
+{% endblock %}
